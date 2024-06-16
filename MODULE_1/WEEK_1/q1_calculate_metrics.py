@@ -1,5 +1,5 @@
 '''
-    1. Viết function thực hiện đánh giá classification model bằng F1-Score.
+    1. Classification metrics (F1-Score).
 '''
 
 def precision(tp, fp):
