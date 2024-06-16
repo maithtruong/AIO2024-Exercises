@@ -1,5 +1,5 @@
 '''
-    2. Viết function mô phỏng theo 3 activation function.
+    2. Functions that simulate 3 given activation functions.
 '''
 
 import math as m
@@ -19,10 +19,7 @@ def activation_function(value, function):
         
     elif function == 'elu':
         alpha = float(input('Please enter alpha value: '))
-        if alpha is None:
-            raise ValueError("Alpha value must be provided for ELU function.")
-        else:
-            output = alpha * (m.exp(value) - 1) if value <= 0 else value
+        output = alpha * (m.exp(value) - 1) if value <= 0 else value
 
     else:
         raise ValueError(f'{function} is not supported!')

@@ -1,5 +1,5 @@
 '''
-    5. Viết function thực hiện Mean Difference of n
+    5. Calculate Mean Difference of n.
 '''
 
 import math

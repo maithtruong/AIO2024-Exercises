@@ -1,5 +1,5 @@
 '''
-    3. Viết function lựa chọn regression loss function để tính loss
+    3. Function to choose regression method for loss.
 '''
 import random as r
 import math as m

@@ -1,5 +1,5 @@
 '''
-    4. Viết 4 functions để ước lượng các hàm số sau.
+    4. Approximate geometric functions.
 '''
 
 import math
@@ -11,7 +11,7 @@ def factorial(n):
 
 def sin_approx(x, n):
     if not isinstance(n, int) or n <= 0:
-        raise ValueError("n must be a positive integer.")
+        raise ValueError(f"{n} must be a positive integer.")
     
     sin_x = 0
     for i in range(n):
@@ -21,7 +21,7 @@ def sin_approx(x, n):
 
 def cos_approx(x, n):
     if not isinstance(n, int) or n <= 0:
-        raise ValueError("n must be a positive integer.")
+        raise ValueError(f"{n} must be a positive integer.")
     
     cos_x = 0
     for i in range(n):
