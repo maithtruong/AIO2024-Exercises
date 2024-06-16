@@ -1,5 +1,5 @@
 '''
-    Chạy các hàm đã viết trong tự luận cho phần trắc nghiệm.
+    Run functions for the multiple choice exercises.
 '''
 
 from q1_calculate_metrics import metrics
