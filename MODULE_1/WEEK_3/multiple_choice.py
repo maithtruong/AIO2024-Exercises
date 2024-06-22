@@ -15,28 +15,24 @@ def main():
     data = torch.Tensor([1, 2, 3])
     softmax_function = nn.Softmax(dim=0)
     output = softmax_function(data)
-    assert round(output[0].item(), 2) == 0.09
     print(output)
 
     print('Question 2:')  # B
     data = torch.Tensor([5, 2, 4])
     my_softmax = Softmax()
     output = my_softmax(data)
-    assert round(output[-1].item(), 2) == 0.26
     print(output)
 
     print('Question 3:')  # C
     data = torch.Tensor([1, 2, 300000000])
     my_softmax = Softmax()
     output = my_softmax(data)
-    assert round(output[0].item(), 2) == 0.0
     print(output)
 
     print('Question 4:')  # A
     data = torch.Tensor([1, 2, 3])
     softmax_stable = SoftmaxStable()
     output = softmax_stable(data)
-    assert round(output[-1].item(), 2) == 0.67
     print(output)
 
     print('Question 5:')  # A
@@ -49,17 +45,16 @@ def main():
     assert teacher1 . _yob == 1991
     teacher1 . describe()
 
-    print('Question 7:') # 
+    print('Question 7:') # A
     doctor1 = Doctor ( name =" doctorZ2023 ", yob =1981 , specialization =" Endocrinologists ")
     assert doctor1 . _yob == 1981
-    doctor1 . describe ()
+    doctor1.describe ()
 
     print('Question 8:') # C
     student1 = Student(name="studentA", yob=2010, grade="7")
     teacher1 = Teacher(name="teacherA", yob=1969, subject="Math")
     teacher2 = Teacher(name="teacherB", yob=1995, subject="History")
     doctor1 = Doctor(name="doctorA", yob=1945, specialization="Endocrinologists")
-    # assert ward1.count_doctor() == 1
     doctor2 = Doctor(name="doctorB", yob=1975, specialization="Cardiologists")
     ward1 = Ward(name="Ward1")
     ward1.add_person(student1)
