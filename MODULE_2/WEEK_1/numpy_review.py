@@ -65,9 +65,6 @@ def main():
     b = np.array([6, 3, 4, 8, 9, 7, 1])
     print("Result", np.where(a < b, b, a))
 
-    # Image Processing
-    import matplotlib.image as mpimg
-
     print("\nQuestion 12:")  # A
     #!gdown 1i9dqan21DjQoG5Q_VEvm0LrVwAlXD0vB
     import matplotlib.image as mpimg
@@ -84,10 +81,8 @@ def main():
         img[:, :, 1] + 0.07 * img[:, :, 2]
     print(gray_img_03[0, 0])
 
-    # Data Analysis
-    import pandas as pd
-
     print("\nQuestion 15:")  # C
+    import pandas as pd
     #!gdown 1iA0WmVfW88HyJvTBSQDI5vesf-pgKabq
     df = pd.read_csv('advertising.csv')
     data = df.to_numpy()
