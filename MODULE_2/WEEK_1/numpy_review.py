@@ -47,7 +47,7 @@ def main():
 
     print("\nQuestion 9:")  # C
     a = np.array([2, 6, 1, 9, 10, 3, 27])
-    index = np.where((a >= 5) & (a <= 10))
+    index = np.nonzero((a >= 5) & (a <= 10))
     print("Result", a[index])
 
     print("\nQuestion 10:")  # D
@@ -120,6 +120,7 @@ def main():
     scores = np.where(data[:, 3] > closest_value, 'Good', np.where(
         data[:, 3] < closest_value, 'Bad', 'Average'))
     print(scores[7:10])
+
 
 if __name__ == "__main__":
     main()
